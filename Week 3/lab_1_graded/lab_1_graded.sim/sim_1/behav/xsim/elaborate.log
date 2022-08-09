@@ -1,0 +1,13 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9d92e944f5fc4e6397d2c9cb5da0bf93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot switch_to_LED_simulation_behav xil_defaultlib.switch_to_LED_simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.switch_to_LED
+Compiling module xil_defaultlib.switch_to_LED_simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot switch_to_LED_simulation_behav

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/EE2026/Week 6/lab_3/lab_3.srcs/sources_1/new/slow_blinky_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slow_blinky_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/EE2026/Week 6/lab_3/lab_3.srcs/sim_1/new/test_slow_blinky.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_slow_blinky

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/EE2026/Week 3/lab_1_practice/lab_1_practice.srcs/sources_1/new/lab1_practice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_control_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/EE2026/Week 3/lab_1_practice/lab_1_practice.srcs/sim_1/new/test_lab1_practice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_control_module_simulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianning/Desktop/EE2026/Week 3/lab_1_practice/lab_1_practice.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

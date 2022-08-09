@@ -1,0 +1,286 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Mar 29 23:49:36 2021
+| Host         : Jianning-XPS-15 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   216 |
+| Unused register locations in slices containing registers |   888 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      4 |            1 |
+|      8 |           13 |
+|     10 |            4 |
+|     12 |            2 |
+|     14 |            4 |
+|    16+ |          187 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1222 |          430 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             884 |          124 |
+| Yes          | No                    | No                     |             230 |           42 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            5096 |         1134 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+-------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|                    Clock Signal                    |                        Enable Signal                        |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++----------------------------------------------------+-------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|  selection/oled_data_reg[15]_i_2_n_0               |                                                             |                                                           |                1 |              2 |
+|  oled_volume_intensity/colour/border_reg[9]/G0     |                                                             |                                                           |                1 |              2 |
+|  oled_volume_intensity/colour/background_reg[4]/G0 |                                                             |                                                           |                1 |              2 |
+|  clk_381hz_BUFG                                    |                                                             | seven_segment_intensity/peak_value/seg_reg[6]             |                1 |              2 |
+| ~clk_6p25mhz_BUFG                                  |                                                             |                                                           |                1 |              2 |
+|  clk_6p25mhz_BUFG                                  |                                                             |                                                           |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG                               | bb/randNum[3]_i_1_n_0                                       |                                                           |                1 |              8 |
+|  clk_50hz_BUFG                                     | bb/bbl/randStart[4]_i_1_n_0                                 |                                                           |                1 |              8 |
+|  clk_50hz_BUFG                                     | bb/bbl/wam/player2_0                                        | bb/bbl/start_wam_reg_n_0                                  |                1 |              8 |
+|  clk_50hz_BUFG                                     | bb/bbl/wam/player1                                          | bb/bbl/start_wam_reg_n_0                                  |                1 |              8 |
+|  clk_50hz_BUFG                                     | bb/bbl/sl/player1                                           | bb/bbl/start_slap_reg_n_0                                 |                3 |              8 |
+|  clk_50hz_BUFG                                     | bb/bbl/sl/player2                                           | bb/bbl/start_slap_reg_n_0                                 |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | bb/counter[3]_i_1__0_n_0                                  |                1 |              8 |
+|  clk_50hz_BUFG                                     |                                                             | bb/bbl/start_slap_reg_n_0                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | led_intensity/LED[15]_i_1_n_0                             |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | game_2048_game/counter[3]_i_1_n_0                         |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | game_2048_game/logic/SR[0]                                |                1 |              8 |
+|  clk_50hz_BUFG                                     |                                                             | bb/bbl/start_tow_reg_n_0                                  |                2 |              8 |
+|  clk_381hz_BUFG                                    |                                                             | seven_segment_intensity/peak_value/seg_reg[5]_0           |                2 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                             | led_intensity/peak_value/peak_output                        |                                                           |                1 |             10 |
+|  J_MIC3_Pin1_OBUF_BUFG                             | oled_volume_intensity/peak_value/peak_output                |                                                           |                2 |             10 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/peak_value/peak_output                           |                                                           |                2 |             10 |
+|  clk_50hz_BUFG                                     |                                                             | bb/bbl/start_cd_reg_n_0                                   |                3 |             10 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY                                     | snake_game/logic/size0                                    |                2 |             12 |
+|  clk_50hz_BUFG                                     |                                                             | bb/bbl/start_wam_reg_n_0                                  |                4 |             12 |
+|  CLK100MHZ_IBUF_BUFG                               | oled_data                                                   |                                                           |                5 |             14 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX                                     | snake_game/logic/size0                                    |                3 |             14 |
+|  clk_50hz_BUFG                                     | bb/bbl/tow/shift                                            | bb/bbl/start_tow_reg_n_0                                  |                3 |             14 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/size[6]_i_1_n_0                            | snake_game/logic/size0                                    |                4 |             14 |
+|  clk_50hz_BUFG                                     | oled_volume_intensity/shift[7]_i_2_n_0                      | up_signal/DFF1/shift_reg[5]                               |                3 |             16 |
+|  clk_50hz_BUFG                                     | bb/bbl/start_cd_reg_n_0                                     |                                                           |                5 |             20 |
+| ~audio_capture/J_MIC3_Pin4_OBUF                    |                                                             |                                                           |                4 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[6][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |                9 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[15][12]_i_1_n_0                   | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               11 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[14][12]_i_1_n_0                   | game_2048_game/logic/prev[0][12]_i_1_n_0                  |                8 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                             | led_intensity/peak_value/p_0_in                             | led_intensity/peak_value/peak_output                      |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                             | oled_volume_intensity/peak_value/peak_value_reg[11]_i_2_n_2 | oled_volume_intensity/peak_value/peak_output              |                2 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                             | seven_segment_intensity/peak_value/p_0_in                   | seven_segment_intensity/peak_value/peak_output            |                4 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                             | seven_segment_intensity/peak_value/peak_output              |                                                           |                4 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[13][12]_i_1_n_0                   | game_2048_game/logic/prev[0][12]_i_1_n_0                  |                9 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[12][12]_i_1_n_0                   | game_2048_game/logic/prev[0][12]_i_1_n_0                  |                8 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[11][12]_i_1_n_0                   | game_2048_game/logic/prev[0][12]_i_1_n_0                  |                9 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[10][12]_i_1_n_0                   | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               12 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[0][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               12 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[5][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |                7 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[4][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               10 |             24 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | J_MIC3_Pin1_OBUF_BUFG                                     |                3 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[3][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |                9 |             24 |
+|  CLK100MHZ_IBUF_BUFG                               | audio_capture/p_0_in                                        | snake_game/peak_value/peak_output                         |                3 |             24 |
+|  CLK100MHZ_IBUF_BUFG                               | audio_capture/peak_value_reg[0]_1                           | game_2048_game/peak_value/peak_output                     |                2 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[2][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               11 |             24 |
+|  CLK100MHZ_IBUF_BUFG                               | game_2048_game/peak_value/peak_output                       |                                                           |                3 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[1][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               10 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[7][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               12 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[8][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               11 |             24 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/grid[9][12]_i_1_n_0                    | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               11 |             24 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[65][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[22][5]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[71][5]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[28][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[66][5]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[35][5]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[77][5]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[34][5]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[33][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[72][5]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[67][5]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[23][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[60][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[31][5]_i_1_n_0                      | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[29][5]_i_1_n_0                      | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[83][5]_i_2_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[30][5]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/appleX                                     |                                                           |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[100][6]_i_1_n_0                     | snake_game/logic/size0                                    |                3 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[101][6]_i_1_n_0                     | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[102][6]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[37][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[13][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[42][6]_i_1_n_0                      | snake_game/logic/size0                                    |                8 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[46][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[45][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[112][6]_i_1_n_0                     | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[111][6]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[25][6]_i_1_n_0                      | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[10][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[16][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[48][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[123][6]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[49][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[4][6]_i_1_n_0                       | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[107][6]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[1][6]_i_1_n_0                       | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[103][6]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[105][6]_i_1_n_0                     | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[43][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[44][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[109][6]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[11][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[38][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[50][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[39][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[118][6]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[26][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[122][6]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[40][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[3][6]_i_1_n_0                       | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[124][6]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[41][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[82][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[86][6]_i_1_n_0                      | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[8][6]_i_1_n_0                       | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[81][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[91][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[93][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[6][6]_i_1_n_0                       | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[96][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[68][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[98][6]_i_1_n_0                      | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[59][6]_i_1_n_0                      | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[73][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[92][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[9][6]_i_1_n_0                       | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[51][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[52][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[5][6]_i_1_n_0                       | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[74][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[89][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[97][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[57][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[58][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[56][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[62][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[78][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[54][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[84][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[70][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[85][6]_i_1_n_0                      | snake_game/logic/size0                                    |                3 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[63][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[7][6]_i_1_n_0                       | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[90][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[94][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[88][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[95][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[87][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[99][6]_i_1_n_0                      | snake_game/logic/size0                                    |                3 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[53][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[115][5]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[17][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[19][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[75][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[116][5]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[108][5]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[113][5]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[121][5]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[14][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[15][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[20][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[120][5]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[18][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[21][5]_i_1_n_0                      | snake_game/logic/size0                                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[79][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[114][5]_i_1_n_0                     | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[76][6]_i_1_n_0                      | snake_game/logic/size0                                    |                3 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[55][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[106][6]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[69][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[64][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  clk_50hz_BUFG                                     |                                                             | bb/bbl/FSM_sequential_state[2]_i_1_n_0                    |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[61][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[125][6]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[119][6]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[24][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[110][6]_i_1_n_0                     | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[104][6]_i_1_n_0                     | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[80][6]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[126][6]_i_1_n_0                     | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[47][6]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[117][5]_i_1_n_0                     | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[27][5]_i_1_n_0                      | snake_game/logic/size0                                    |                4 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[36][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[2][6]_i_1_n_0                       | snake_game/logic/size0                                    |                6 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeY[32][5]_i_1_n_0                      | snake_game/logic/size0                                    |                5 |             26 |
+|  CLK100MHZ_IBUF_BUFG                               | snake_game/logic/snakeX[12][6]_i_1_n_0                      | snake_game/logic/size0                                    |                6 |             26 |
+|  J_MIC3_Pin1_OBUF_BUFG                             |                                                             |                                                           |                7 |             30 |
+| ~clk_6p25mhz_BUFG                                  |                                                             | reset_signal/DFF1/reset                                   |                4 |             34 |
+|  CLK100MHZ_IBUF_BUFG                               | sw_IBUF[15]                                                 |                                                           |                5 |             36 |
+| ~clk_6p25mhz_BUFG                                  | oled_display/delay[0]_i_1_n_0                               | reset_signal/DFF1/reset                                   |                5 |             40 |
+|  CLK100MHZ_IBUF_BUFG                               | game_2048_game/randGrid[3]_i_1_n_0                          |                                                           |                8 |             40 |
+|  CLK100MHZ_IBUF_BUFG                               | led[15]_i_2_n_0                                             | led[15]_i_1_n_0                                           |                9 |             54 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | snake_game/peak_value/counter[31]_i_1_n_0                 |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | game_2048_game/peak_value/counter[31]_i_1__0_n_0          |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG                             |                                                             | seven_segment_intensity/peak_value/counter[31]_i_1__2_n_0 |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG                             |                                                             | oled_volume_intensity/peak_value/counter[31]_i_1__3_n_0   |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG                             |                                                             | led_intensity/peak_value/counter[31]_i_1__1_n_0           |                8 |             62 |
+|  clk_50hz_BUFG                                     | bb/bbl/cd/player2[31]_i_1_n_0                               | bb/bbl/start_cd_reg_n_0                                   |               12 |             64 |
+|  clk_50hz_BUFG                                     | bb/bbl/tow/counter0                                         | bb/bbl/start_tow_reg_n_0                                  |                8 |             64 |
+|  clk_50hz_BUFG                                     | bb/bbl/wam/counter0                                         | bb/bbl/wam/counter[0]_i_1__4_n_0                          |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | snake_game/logic/update_reg_i_1_n_0                       |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | clk6p25mHz/count[0]_i_1__2_n_0                            |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | clk50Hz/clear                                             |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | clk381Hz/count[0]_i_1__5_n_0                              |                8 |             64 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             | clk20kHz/count[0]_i_1__4_n_0                              |                8 |             64 |
+|  clk_50hz_BUFG                                     | bb/bbl/sl/counter0                                          | bb/bbl/sl/counter[0]_i_1__5_n_0                           |                8 |             64 |
+|  clk_50hz_BUFG                                     | bb/bbl/sl/counter1[31]_i_2_n_0                              | bb/bbl/sl/counter1[31]_i_1_n_0                            |                9 |             64 |
+|  clk_50hz_BUFG                                     | bb/bbl/sl/counter2[31]_i_2_n_0                              | bb/bbl/sl/counter2[31]_i_1_n_0                            |                8 |             64 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/prev_score[31]_i_1_n_0                 | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               17 |             64 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/score[31]_i_1_n_0                      | game_2048_game/logic/prev[0][12]_i_1_n_0                  |               15 |             64 |
+|  clk_50hz_BUFG                                     | bb/bbl/cd/counter[0]_i_1__3_n_0                             | bb/bbl/start_cd_reg_n_0                                   |                8 |             64 |
+|  clk_50hz_BUFG                                     | bb/bbl/cd/player1[31]_i_1_n_0                               | bb/bbl/start_cd_reg_n_0                                   |               12 |             64 |
+| ~clk_6p25mhz_BUFG                                  | oled_display/state_0                                        | reset_signal/DFF1/reset                                   |               10 |             64 |
+|  clk_381hz_BUFG                                    |                                                             |                                                           |               15 |             66 |
+| ~clk_6p25mhz_BUFG                                  |                                                             | oled_display/spi_word[39]_i_1_n_0                         |               11 |             90 |
+|  clk_50hz_BUFG                                     |                                                             |                                                           |               43 |            116 |
+|  clk_50hz_BUFG                                     | game_2048_game/logic/prev                                   | game_2048_game/logic/prev[0][12]_i_1_n_0                  |              156 |            416 |
+|  CLK100MHZ_IBUF_BUFG                               |                                                             |                                                           |              356 |            974 |
++----------------------------------------------------+-------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+
+

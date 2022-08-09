@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Mar 26 07:58:24 2021
+# Process ID: 11524
+# Current directory: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24344 C:\Users\Jianning\Desktop\EE2026\Week 11\SoundDisplay.xpr\SoundDisplay\SoundDisplay.xpr
+# Log file: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/vivado.log
+# Journal file: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Jianning/Desktop/EE2026/Week 10/SoundDisplay.xpr/SoundDisplay/.Xil/Vivado-14796-Jianning-XPS-15/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 848.020 ; gain = 158.750
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Mar 26 09:57:06 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Fri Mar 26 10:07:47 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Mar 26 10:10:11 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Mar 26 11:18:03 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Fri Mar 26 11:30:21 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Mar 26 11:32:44 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/impl_1/runme.log
+archive_project C:/Downloads/test2048.xpr.zip -temp_dir {C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/.Xil/Vivado-11524-Jianning-XPS-15} -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/.Xil/Vivado-11524-Jianning-XPS-15' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/.Xil/Vivado-11524-Jianning-XPS-15/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Downloads/test2048.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Mar 26 19:30:06 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Fri Mar 26 19:35:18 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Mar 26 19:37:46 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/impl_1/runme.log
+archive_project C:/Users/Jianning/Downloads/fix32and64.xpr.zip -temp_dir {C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/.Xil/Vivado-11524-Jianning-XPS-15} -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/.Xil/Vivado-11524-Jianning-XPS-15' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/.Xil/Vivado-11524-Jianning-XPS-15/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/Jianning/Downloads/fix32and64.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 27 09:12:32 2021...

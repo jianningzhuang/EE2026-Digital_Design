@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sim_1/new/test_subtractor.v,1613139129,verilog,,,,test_subtractor,,,,,,,,
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sim_1/new/test_two_complement.v,1612163270,verilog,,,,test_two_complement,,,,,,,,
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/eight_bit_subtractor.v,1613138028,verilog,,C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/five_bit_adder.v,,eight_bit_subtractor,,,,,,,,
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/five_bit_adder.v,1612092696,verilog,,C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/one_bit_full_adder.v,,five_bit_adder,,,,,,,,
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/one_bit_full_adder.v,1612092292,verilog,,C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/three_bit_adder.v,,one_bit_full_adder,,,,,,,,
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/seven_segment.v,1612187756,verilog,,C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/three_bit_adder.v,,seven_segment,,,,,,,,
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/three_bit_adder.v,1612092580,verilog,,C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sim_1/new/test_subtractor.v,,three_bit_adder,,,,,,,,
+C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sources_1/new/two_complement.v,1612167703,verilog,,C:/Users/Jianning/Desktop/EE2026/Week 4/lab_2_graded/lab_2_graded.srcs/sim_1/new/test_subtractor.v,,two_complement,,,,,,,,

@@ -1,0 +1,81 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Mar 10 01:06:06 2021
+| Host         : Jianning-XPS-15 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            1 |
+|     14 |            2 |
+|    16+ |           12 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              90 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             294 |           37 |
+| Yes          | No                    | No                     |             104 |           19 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             126 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+|     Clock Signal     |          Enable Signal         |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+|  CLOCK_IBUF_BUFG     | count2/E[0]                    |                              |                3 |              8 |
+|  clk381Hz/CLK        | count2/COUNT[6]_i_1__0_n_0     |                              |                5 |             14 |
+|  clk3Hz/COUNT_reg[6] |                                |                              |                2 |             14 |
+|  clk381Hz/CLK        | count2/count_1p342s[8]_i_1_n_0 |                              |                3 |             18 |
+|  CLOCK_IBUF_BUFG     | count_3s[31]_i_2_n_0           | count_3s[28]_i_1_n_0         |                5 |             20 |
+|  CLOCK_IBUF_BUFG     |                                | count1/LED_reg[15]           |                4 |             32 |
+|  CLOCK_IBUF_BUFG     |                                |                              |               13 |             36 |
+|  clk50Hz/new_clk     |                                |                              |               10 |             40 |
+|  CLOCK_IBUF_BUFG     | count_3s[31]_i_2_n_0           | count_3s[31]_i_1_n_0         |                9 |             42 |
+|  CLOCK_IBUF_BUFG     |                                | clk381Hz/count[0]_i_1__0_n_0 |                8 |             64 |
+|  CLOCK_IBUF_BUFG     |                                | clk3Hz/count[0]_i_1_n_0      |                8 |             64 |
+|  CLOCK_IBUF_BUFG     |                                | clk50Hz/clear                |                8 |             64 |
+|  CLOCK_IBUF_BUFG     | sel                            |                              |                8 |             64 |
+|  CLOCK_IBUF_BUFG     | count_10p74s[31]_i_2_n_0       | count_10p74s[31]_i_1_n_0     |                9 |             64 |
+|  CLOCK_IBUF_BUFG     |                                | blink[3]_i_1_n_0             |                9 |             70 |
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+
+

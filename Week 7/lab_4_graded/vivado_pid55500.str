@@ -1,0 +1,142 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 55500
+License: Customer
+
+Current time: 	Wed Mar 17 20:52:01 SGT 2021
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1536x960
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 246 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Jianning
+User home directory: C:/Users/Jianning
+User working directory: C:/Users/Jianning/Desktop/EE2026/Week 7/lab_4_graded
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Jianning/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Jianning/Desktop/EE2026/Week 7/lab_4_graded/vivado.log
+Vivado journal file location: 	C:/Users/Jianning/Desktop/EE2026/Week 7/lab_4_graded/vivado.jou
+Engine tmp dir: 	C:/Users/Jianning/Desktop/EE2026/Week 7/lab_4_graded/.Xil/Vivado-55500-Jianning-XPS-15
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	275 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 623 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Jianning\Desktop\EE2026\Week 7\lab_4_graded\lab_4_graded.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 85 MB (+86389kb) [00:00:04]
+// [Engine Memory]: 522 MB (+395442kb) [00:00:04]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project {C:/Users/Jianning/Desktop/EE2026/Week 7/lab_4_graded/lab_4_graded.xpr} 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Jianning/Desktop/EE2026/Week 7/lab_4_graded/lab_4_graded.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 577 MB (+31094kb) [00:00:06]
+// [Engine Memory]: 608 MB (+1981kb) [00:00:07]
+// Project name: lab_4_graded; location: C:/Users/Jianning/Desktop/EE2026/Week 7/lab_4_graded; part: xc7a35tcpg236-1
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 43 MB. Current time: 3/17/21 8:52:02 PM SGT
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), clk3Hz : my_clock_divider (my_clock_divider.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 45 MB. Current time: 3/17/21 9:22:02 PM SGT
+// [GUI Memory]: 89 MB (+302kb) [00:55:48]
+// Elapsed time: 3500 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), count2 : seven_segment_counter (seven_segment_counter.v)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), count2 : seven_segment_counter (seven_segment_counter.v)]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), show2 : seven_segment_controller (seven_segment_controller.v)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), show2 : seven_segment_controller (seven_segment_controller.v)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/17/21 9:52:03 PM SGT
+// [GUI Memory]: 94 MB (+635kb) [01:08:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/17/21 10:22:03 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/17/21 11:00:04 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/17/21 11:30:04 PM SGT
+// [GUI Memory]: 99 MB (+312kb) [03:04:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/18/21 12:00:04 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 44 MB. Current time: 3/18/21 12:30:04 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/18/21 1:00:05 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/18/21 1:30:05 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/18/21 2:01:23 AM SGT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 23914666ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 42 MB. Current time: 3/18/21 8:40:03 AM SGT
+// Elapsed time: 39467 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.v", 1); // k (j, ck)
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "seven_segment_counter.v", 2); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 42 MB. Current time: 3/18/21 9:10:03 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/18/21 9:40:03 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 42 MB. Current time: 3/18/21 10:10:03 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 43 MB. Current time: 3/18/21 10:40:04 AM SGT
+// Elapsed time: 6895 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.v", 1); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 42 MB. Current time: 3/18/21 11:10:04 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 41 MB. Current time: 3/18/21 11:41:06 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 12:21:06 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 12:51:06 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 1:21:06 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 1:51:07 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 41 MB. Current time: 3/18/21 2:21:08 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 2:51:08 PM SGT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 722 ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 3:21:09 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 3:51:09 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 4:21:10 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 40 MB. Current time: 3/18/21 4:51:10 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 41 MB. Current time: 3/18/21 5:30:11 PM SGT

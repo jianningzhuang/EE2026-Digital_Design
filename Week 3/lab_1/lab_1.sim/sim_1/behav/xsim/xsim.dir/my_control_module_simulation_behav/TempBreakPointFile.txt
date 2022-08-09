@@ -1,0 +1,4 @@
+Breakpoint File Version 1.0
+43 true C:/Users/Jianning/Desktop/EE2026/Week 3/lab_1/lab_1.srcs/sim_1/new/test_simple_boolean.v
+44 true C:/Users/Jianning/Desktop/EE2026/Week 3/lab_1/lab_1.srcs/sim_1/new/test_simple_boolean.v
+45 true C:/Users/Jianning/Desktop/EE2026/Week 3/lab_1/lab_1.srcs/sim_1/new/test_simple_boolean.v
