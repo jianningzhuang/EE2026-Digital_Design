@@ -1,0 +1,1631 @@
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 33544 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 358.555 ; gain = 101.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'my_clock_divider' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/my_clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_clock_divider' (1#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/my_clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_press' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/button_press.v:23]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (2#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'button_press' (3#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/button_press.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (4#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'led_controller' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/led_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'peak_algorithm' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/peak_algorithm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'peak_algorithm' (5#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/peak_algorithm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led_controller' (6#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/led_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_controller' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/seven_segment_controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_controller' (7#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/seven_segment_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (8#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'x_y_converter' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/x_y_converter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'x_y_converter' (9#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/x_y_converter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'oled_intensity' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_intensity.v:23]
+INFO: [Synth 8-6157] synthesizing module 'colour_scheme' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/colour_scheme.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'colour_scheme' (10#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/colour_scheme.v:23]
+INFO: [Synth 8-6157] synthesizing module 'oled_border' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_border.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'oled_border' (11#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_border.v:23]
+INFO: [Synth 8-6157] synthesizing module 'oled_volume' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_volume.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'oled_volume' (12#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_volume.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'oled_intensity' (13#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_intensity.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'menu' (14#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snake' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snake_logic' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_logic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'snake_logic' (15#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake_logic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'snake' (16#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/snake.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_2048' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/game_2048.v:23]
+INFO: [Synth 8-6157] synthesizing module 'border_2048' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/border_2048.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'border_2048' (17#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/border_2048.v:23]
+INFO: [Synth 8-6157] synthesizing module 'logic_2048' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:367]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:367]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:367]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:367]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:367]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:369]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:369]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:369]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:369]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:369]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:371]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:371]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:371]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:371]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:373]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:373]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:373]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:373]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:373]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:374]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:374]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:374]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:374]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:374]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'logic_2048' (18#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/logic_2048.v:23]
+INFO: [Synth 8-6157] synthesizing module 'score_display' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/score_display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'score_display' (19#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/score_display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_2048' (20#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/game_2048.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bishi_bashi' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/bishi_bashi.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bishi_bashi_logic' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/bishi_bashi_logic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'press_to_continue' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/press_to_continue.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'press_to_continue' (21#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/press_to_continue.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tug_of_war' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/tug_of_war.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tug_of_war' (22#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/tug_of_war.v:23]
+INFO: [Synth 8-6157] synthesizing module 'countdown' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'countdown' (23#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'whack_a_mole' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/whack_a_mole.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'whack_a_mole' (24#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/whack_a_mole.v:23]
+INFO: [Synth 8-6157] synthesizing module 'slap' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/slap.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slap' (25#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/slap.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bishi_bashi_logic' (26#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/bishi_bashi_logic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bishi_bashi_seven_segment' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/bishi_bashi_seven_segment.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bishi_bashi_seven_segment' (27#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/bishi_bashi_seven_segment.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bishi_bashi' (28#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/bishi_bashi.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (29#1) [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design slap has unconnected port randNum[4]
+WARNING: [Synth 8-3331] design slap has unconnected port randNum[3]
+WARNING: [Synth 8-3331] design slap has unconnected port randNum[2]
+WARNING: [Synth 8-3331] design slap has unconnected port randNum[1]
+WARNING: [Synth 8-3331] design whack_a_mole has unconnected port randNum[4]
+WARNING: [Synth 8-3331] design whack_a_mole has unconnected port randNum[3]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port up
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port down
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[12]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[11]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[10]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[9]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[8]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[7]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[6]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[5]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[4]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[3]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[11]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[10]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[9]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[8]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[7]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[6]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[5]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[4]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[3]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[2]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[1]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[0]
+WARNING: [Synth 8-3331] design oled_intensity has unconnected port sw[1]
+WARNING: [Synth 8-3331] design oled_intensity has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 644.957 ; gain = 388.312
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 644.957 ; gain = 388.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 644.957 ; gain = 388.312
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1029.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "grid_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "grid_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grid_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grid" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "randGrid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/tug_of_war.v:62]
+INFO: [Synth 8-5546] ROM "shift0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shift0" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "winner" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "winner" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "winner" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bishi_bashi_logic'
+INFO: [Synth 8-5544] ROM "player_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "randNum" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'TASK_reg' in module 'Top_Student'
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TASK" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TASK" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+WARNING: [Synth 8-327] inferring latch for variable 'background_reg' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/colour_scheme.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'border_reg' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/colour_scheme.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'low_reg' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/colour_scheme.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'mid_reg' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/colour_scheme.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'high_reg' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/colour_scheme.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'oled_data_reg' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:87]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE2 |                              010 |                             0010
+                 iSTATE1 |                              011 |                             0011
+                 iSTATE0 |                              100 |                             0100
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bishi_bashi_logic'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE3 |                              011 |                              011
+                 iSTATE2 |                              100 |                              100
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'TASK_reg' using encoding 'sequential' in module 'Top_Student'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:25 ; elapsed = 00:01:31 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |snake_logic__GB0 |           1|     25066|
+|2     |snake_logic__GB1 |           1|      6615|
+|3     |snake_logic__GB2 |           1|      7916|
+|4     |snake_logic__GB3 |           1|      9804|
+|5     |snake_logic__GB4 |           1|     13019|
+|6     |snake_logic__GB5 |           1|     15473|
+|7     |snake__GC0       |           1|      1960|
+|8     |logic_2048__GB0  |           1|     52223|
+|9     |logic_2048__GB1  |           1|     13064|
+|10    |logic_2048__GB2  |           1|     11010|
+|11    |logic_2048__GB3  |           1|     19371|
+|12    |logic_2048__GB4  |           1|     18835|
+|13    |logic_2048__GB5  |           1|     22474|
+|14    |logic_2048__GB6  |           1|     45674|
+|15    |game_2048__GC0   |           1|      6274|
+|16    |Top_Student__GC0 |           1|     21594|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 305   
+	  13 Input     32 Bit       Adders := 3     
+	  12 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 132   
+	   2 Input      7 Bit       Adders := 140   
+	   2 Input      6 Bit       Adders := 18    
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 34    
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 12    
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	               13 Bit    Registers := 32    
+	               12 Bit    Registers := 12    
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 132   
+	                6 Bit    Registers := 131   
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 226   
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 29    
+	  32 Input     32 Bit        Muxes := 1     
+	  16 Input     23 Bit        Muxes := 1     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 100   
+	  18 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 9     
+	   3 Input     16 Bit        Muxes := 5     
+	   7 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 3     
+	   8 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 4607  
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	  40 Input      8 Bit        Muxes := 1     
+	  39 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   7 Input      8 Bit        Muxes := 2     
+	  16 Input      8 Bit        Muxes := 2     
+	  17 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 36    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 110   
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1106  
+	   4 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 16    
+	  10 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 15    
+	   3 Input      1 Bit        Muxes := 16    
+	   6 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module snake_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 258   
+	   2 Input      8 Bit       Adders := 130   
+	   2 Input      7 Bit       Adders := 133   
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	              128 Bit    Registers := 2     
+	                7 Bit    Registers := 131   
+	                6 Bit    Registers := 130   
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module oled_border__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module peak_algorithm__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module snake 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  16 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module logic_2048 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 33    
+	  13 Input     32 Bit       Adders := 3     
+	  12 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 15    
+	   2 Input      3 Bit       Adders := 31    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               13 Bit    Registers := 32    
+	                1 Bit    Registers := 179   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4607  
+	   2 Input      4 Bit        Muxes := 32    
+	   2 Input      2 Bit        Muxes := 85    
+	   2 Input      1 Bit        Muxes := 900   
+	   7 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 16    
+	  10 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 2     
+Module border_2048 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module peak_algorithm__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module score_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  40 Input      8 Bit        Muxes := 1     
+	  39 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
+Module game_2048 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module my_clock_divider__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module my_clock_divider__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module my_clock_divider__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module my_clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module my_dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module peak_algorithm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module led_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  18 Input     16 Bit        Muxes := 1     
+Module peak_algorithm__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module seven_segment_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 2     
+	  16 Input      8 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module colour_scheme 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module oled_border 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module peak_algorithm__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module oled_volume 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 46    
+Module oled_intensity 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module press_to_continue 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 3     
+Module tug_of_war 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module countdown 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 19    
+	   4 Input     16 Bit        Muxes := 6     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module whack_a_mole 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 86    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+Module slap 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 51    
+	   4 Input      1 Bit        Muxes := 1     
+Module bishi_bashi_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 3     
+Module bishi_bashi_seven_segment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  17 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+Module bishi_bashi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[0]' (FDE) to 'snake_gamei_7/speed_reg[4]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[1]' (FDE) to 'snake_gamei_7/speed_reg[4]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[2]' (FDE) to 'snake_gamei_7/speed_reg[4]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[3]' (FDE) to 'snake_gamei_7/speed_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (snake_gamei_7/\speed_reg[4] )
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[23]' (FDE) to 'snake_gamei_7/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[24]' (FDE) to 'snake_gamei_7/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[25]' (FDE) to 'snake_gamei_7/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[26]' (FDE) to 'snake_gamei_7/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[27]' (FDE) to 'snake_gamei_7/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[28]' (FDE) to 'snake_gamei_7/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[29]' (FDE) to 'snake_gamei_7/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'snake_gamei_7/speed_reg[30]' (FDE) to 'snake_gamei_7/speed_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (snake_gamei_7/\speed_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (game_2048_gamei_15/nolabel_line86/\seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module score_display.
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[0]' (FDR) to 'game_2048_gamei_15/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[1]' (FDR) to 'game_2048_gamei_15/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[2]' (FDR) to 'game_2048_gamei_15/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[6]' (FDR) to 'game_2048_gamei_15/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[7]' (FDR) to 'game_2048_gamei_15/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[8]' (FDR) to 'game_2048_gamei_15/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[11]' (FDR) to 'game_2048_gamei_15/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[12]' (FDR) to 'game_2048_gamei_15/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[13]' (FDR) to 'game_2048_gamei_15/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[14]' (FDR) to 'game_2048_gamei_15/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[3]' (FDR) to 'game_2048_gamei_15/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'game_2048_gamei_15/oled_data_reg[5]' (FDR) to 'game_2048_gamei_15/oled_data_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\snakeX_reg[127][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\snakeX_reg[127][6] )
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port P[1] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port P[0] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O58[7] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O58[6] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O58[5] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O58[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O58[1] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O58[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O60[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O60[3] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O60[1] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB0 has port O60[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port P[7] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port P[6] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port P[5] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port P[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port O95[1] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port O95[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port O96[7] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port O96[6] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port O96[5] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port O96[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port O96[1] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB1 has port O96[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port P[7] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port P[6] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port P[5] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port P[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port O229[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port O229[3] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port O229[1] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB5 has port O229[0] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port P[7] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port P[6] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port P[5] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port P[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O273[7] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O273[6] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O273[5] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O273[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O273[1] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O273[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O276[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O276[3] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O276[1] driven by constant 1
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O276[0] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O284[7] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O284[6] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O284[5] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O284[4] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O284[1] driven by constant 0
+WARNING: [Synth 8-3917] design logic_2048__GB6 has port O284[0] driven by constant 0
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'player2_reg[31:0]' into 'player2_reg[31:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:54]
+INFO: [Synth 8-4471] merging register 'player1_reg[31:0]' into 'player1_reg[31:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:53]
+INFO: [Synth 8-4471] merging register 'player1_reg[31:0]' into 'player1_reg[31:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:53]
+INFO: [Synth 8-4471] merging register 'player2_reg[31:0]' into 'player2_reg[31:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:54]
+INFO: [Synth 8-4471] merging register 'target_reg[10:0]' into 'target_reg[10:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+INFO: [Synth 8-4471] merging register 'target_reg[10:0]' into 'target_reg[10:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+INFO: [Synth 8-4471] merging register 'target_reg[10:0]' into 'target_reg[10:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+INFO: [Synth 8-4471] merging register 'target_reg[10:0]' into 'target_reg[10:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+INFO: [Synth 8-4471] merging register 'target_reg[10:0]' into 'target_reg[10:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+INFO: [Synth 8-4471] merging register 'target_reg[10:0]' into 'target_reg[10:0]' [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+WARNING: [Synth 8-6014] Unused sequential element target_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+WARNING: [Synth 8-6014] Unused sequential element player2_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:54]
+WARNING: [Synth 8-6014] Unused sequential element player1_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:53]
+WARNING: [Synth 8-6014] Unused sequential element player1_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:53]
+WARNING: [Synth 8-6014] Unused sequential element player2_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:54]
+WARNING: [Synth 8-6014] Unused sequential element target_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+WARNING: [Synth 8-6014] Unused sequential element target_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+WARNING: [Synth 8-6014] Unused sequential element target_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+WARNING: [Synth 8-6014] Unused sequential element target_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+WARNING: [Synth 8-6014] Unused sequential element target_reg was removed.  [C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/countdown.v:51]
+WARNING: [Synth 8-3331] design slap has unconnected port randNum[4]
+WARNING: [Synth 8-3331] design slap has unconnected port randNum[3]
+WARNING: [Synth 8-3331] design slap has unconnected port randNum[2]
+WARNING: [Synth 8-3331] design slap has unconnected port randNum[1]
+WARNING: [Synth 8-3331] design whack_a_mole has unconnected port randNum[4]
+WARNING: [Synth 8-3331] design whack_a_mole has unconnected port randNum[3]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port up
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port down
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[12]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[11]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[10]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[9]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[8]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[7]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[6]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[5]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[4]
+WARNING: [Synth 8-3331] design bishi_bashi_logic has unconnected port sw[3]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[11]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[10]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[9]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[8]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[7]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[6]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[5]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[4]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[3]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[2]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[1]
+WARNING: [Synth 8-3331] design bishi_bashi has unconnected port mic_in[0]
+WARNING: [Synth 8-3331] design oled_intensity has unconnected port sw[1]
+WARNING: [Synth 8-3331] design oled_intensity has unconnected port sw[0]
+INFO: [Synth 8-3886] merging instance 'bb/bbl/sl/oled_data_reg[0]' (FDSE) to 'bb/bbl/sl/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/ready_screen/oled_data_reg[0]' (FDE) to 'bb/bbl/ready_screen/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/tow/oled_data_reg[0]' (FDSE) to 'bb/bbl/tow/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/cd/oled_data_reg[0]' (FDE) to 'bb/bbl/cd/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/wam/oled_data_reg[0]' (FDE) to 'bb/bbl/wam/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/sl/oled_data_reg[1]' (FDSE) to 'bb/bbl/sl/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/ready_screen/oled_data_reg[1]' (FDE) to 'bb/bbl/ready_screen/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/tow/oled_data_reg[1]' (FDSE) to 'bb/bbl/tow/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/cd/oled_data_reg[1]' (FDE) to 'bb/bbl/cd/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/wam/oled_data_reg[1]' (FDE) to 'bb/bbl/wam/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'selection/oled_data_reg[0]' (LD) to 'selection/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/border_reg[0]' (LDCP) to 'oled_volume_intensity/colour/border_reg[9]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/low_reg[0]' (LD) to 'oled_volume_intensity/colour/low_reg[1]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/mid_reg[0]' (LD) to 'oled_volume_intensity/colour/mid_reg[1]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/high_reg[0]' (LD) to 'oled_volume_intensity/colour/high_reg[1]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/background_reg[0]' (LDCP) to 'oled_volume_intensity/colour/background_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/sl/oled_data_reg[2]' (FDSE) to 'bb/bbl/sl/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/ready_screen/oled_data_reg[2]' (FDE) to 'bb/bbl/ready_screen/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/tow/oled_data_reg[2]' (FDSE) to 'bb/bbl/tow/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/cd/oled_data_reg[2]' (FDE) to 'bb/bbl/cd/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/wam/oled_data_reg[2]' (FDE) to 'bb/bbl/wam/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'selection/oled_data_reg[1]' (LD) to 'selection/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/border_reg[1]' (LDCP) to 'oled_volume_intensity/colour/border_reg[9]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/low_reg[1]' (LD) to 'oled_volume_intensity/colour/low_reg[2]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/mid_reg[1]' (LD) to 'oled_volume_intensity/colour/mid_reg[4]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/high_reg[1]' (LD) to 'oled_volume_intensity/colour/high_reg[2]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/background_reg[1]' (LDCP) to 'oled_volume_intensity/colour/background_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/sl/oled_data_reg[3]' (FDSE) to 'bb/bbl/sl/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/ready_screen/oled_data_reg[3]' (FDE) to 'bb/bbl/ready_screen/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/tow/oled_data_reg[3]' (FDSE) to 'bb/bbl/tow/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/cd/oled_data_reg[3]' (FDE) to 'bb/bbl/cd/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/wam/oled_data_reg[3]' (FDE) to 'bb/bbl/wam/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'selection/oled_data_reg[2]' (LD) to 'selection/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/border_reg[2]' (LDCP) to 'oled_volume_intensity/colour/border_reg[9]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/low_reg[2]' (LD) to 'oled_volume_intensity/colour/low_reg[3]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/mid_reg[2]' (LD) to 'oled_volume_intensity/colour/mid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/high_reg[2]' (LD) to 'oled_volume_intensity/colour/high_reg[3]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/background_reg[2]' (LDCP) to 'oled_volume_intensity/colour/background_reg[4]'
+INFO: [Synth 8-3886] merging instance 'selection/oled_data_reg[3]' (LD) to 'selection/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/border_reg[3]' (LDCP) to 'oled_volume_intensity/colour/border_reg[9]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/low_reg[3]' (LD) to 'oled_volume_intensity/colour/low_reg[4]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/high_reg[3]' (LD) to 'oled_volume_intensity/colour/high_reg[4]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/background_reg[3]' (LDCP) to 'oled_volume_intensity/colour/background_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/sl/oled_data_reg[5]' (FDSE) to 'bb/bbl/sl/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/ready_screen/oled_data_reg[5]' (FDE) to 'bb/bbl/ready_screen/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/tow/oled_data_reg[5]' (FDSE) to 'bb/bbl/tow/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/cd/oled_data_reg[5]' (FDE) to 'bb/bbl/cd/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/wam/oled_data_reg[5]' (FDE) to 'bb/bbl/wam/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'selection/oled_data_reg[4]' (LD) to 'selection/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/border_reg[4]' (LDCP) to 'oled_volume_intensity/colour/border_reg[9]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/sl/oled_data_reg[6]' (FDSE) to 'bb/bbl/sl/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/ready_screen/oled_data_reg[6]' (FDE) to 'bb/bbl/ready_screen/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/tow/oled_data_reg[6]' (FDSE) to 'bb/bbl/tow/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/cd/oled_data_reg[6]' (FDE) to 'bb/bbl/cd/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/wam/oled_data_reg[6]' (FDE) to 'bb/bbl/wam/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'selection/oled_data_reg[5]' (LD) to 'selection/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/border_reg[5]' (LDCP) to 'oled_volume_intensity/colour/border_reg[9]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/low_reg[5]' (LD) to 'oled_volume_intensity/colour/low_reg[6]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/mid_reg[5]' (LD) to 'oled_volume_intensity/colour/mid_reg[6]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/high_reg[5]' (LD) to 'oled_volume_intensity/colour/high_reg[10]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/background_reg[5]' (LDC) to 'oled_volume_intensity/colour/background_reg[15]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/sl/oled_data_reg[7]' (FDSE) to 'bb/bbl/sl/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/ready_screen/oled_data_reg[7]' (FDE) to 'bb/bbl/ready_screen/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/tow/oled_data_reg[7]' (FDSE) to 'bb/bbl/tow/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/cd/oled_data_reg[7]' (FDE) to 'bb/bbl/cd/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/wam/oled_data_reg[7]' (FDE) to 'bb/bbl/wam/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'selection/oled_data_reg[6]' (LD) to 'selection/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/low_reg[6]' (LD) to 'oled_volume_intensity/colour/low_reg[7]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/mid_reg[6]' (LD) to 'oled_volume_intensity/colour/mid_reg[7]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/high_reg[6]' (LD) to 'oled_volume_intensity/colour/high_reg[10]'
+INFO: [Synth 8-3886] merging instance 'oled_volume_intensity/colour/background_reg[6]' (LDC) to 'oled_volume_intensity/colour/background_reg[15]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/sl/oled_data_reg[8]' (FDSE) to 'bb/bbl/sl/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/ready_screen/oled_data_reg[8]' (FDE) to 'bb/bbl/ready_screen/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/tow/oled_data_reg[8]' (FDSE) to 'bb/bbl/tow/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/cd/oled_data_reg[8]' (FDE) to 'bb/bbl/cd/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bb/bbl/wam/oled_data_reg[8]' (FDE) to 'bb/bbl/wam/oled_data_reg[10]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (bb/bbl/ready_screen/\oled_data_reg[10] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (bb/bbl/cd/\target_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (oled_volume_intensity/\colour/low_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (oled_volume_intensity/\colour/background_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (bb/\bbss/seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[6]) is unused and will be removed from module led_controller.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[5]) is unused and will be removed from module led_controller.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[4]) is unused and will be removed from module led_controller.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[3]) is unused and will be removed from module led_controller.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[2]) is unused and will be removed from module led_controller.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[1]) is unused and will be removed from module led_controller.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[0]) is unused and will be removed from module led_controller.
+WARNING: [Synth 8-3332] Sequential element (colour/background_reg[15]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (colour/low_reg[15]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[6]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[5]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[4]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[3]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[2]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[1]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (peak_value/peak_output_reg[0]) is unused and will be removed from module oled_intensity.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[10]) is unused and will be removed from module press_to_continue.
+WARNING: [Synth 8-3332] Sequential element (target_reg[0]) is unused and will be removed from module countdown.
+WARNING: [Synth 8-3332] Sequential element (bbss/seg_reg[7]) is unused and will be removed from module bishi_bashi.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (seven_segment_intensity/\seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module seven_segment_controller.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:58 ; elapsed = 00:09:14 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |snake_logic__GB0 |           1|     12181|
+|2     |snake_logic__GB1 |           1|      1899|
+|3     |snake_logic__GB2 |           1|      3380|
+|4     |snake_logic__GB3 |           1|      3527|
+|5     |snake_logic__GB4 |           1|      5472|
+|6     |snake_logic__GB5 |           1|      6571|
+|7     |snake__GC0       |           1|       570|
+|8     |logic_2048__GB0  |           1|      8838|
+|9     |logic_2048__GB1  |           1|      1058|
+|10    |logic_2048__GB2  |           1|      1140|
+|11    |logic_2048__GB3  |           1|      6040|
+|12    |logic_2048__GB4  |           1|      4448|
+|13    |logic_2048__GB5  |           1|      3455|
+|14    |logic_2048__GB6  |           1|      4193|
+|15    |game_2048__GC0   |           1|      5660|
+|16    |Top_Student__GC0 |           1|      8748|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:09:06 ; elapsed = 00:09:23 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:09:12 ; elapsed = 00:09:29 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |snake_logic__GB0 |           1|     12181|
+|2     |snake_logic__GB1 |           1|      1899|
+|3     |snake_logic__GB2 |           1|      3380|
+|4     |snake_logic__GB3 |           1|      3527|
+|5     |snake_logic__GB4 |           1|      5472|
+|6     |snake_logic__GB5 |           1|      6518|
+|7     |snake__GC0       |           1|       560|
+|8     |logic_2048__GB0  |           1|      8710|
+|9     |logic_2048__GB1  |           1|       879|
+|10    |logic_2048__GB2  |           1|      1136|
+|11    |logic_2048__GB3  |           1|      6030|
+|12    |logic_2048__GB4  |           1|      3960|
+|13    |logic_2048__GB5  |           1|      2597|
+|14    |logic_2048__GB6  |           1|      4050|
+|15    |game_2048__GC0   |           1|      5660|
+|16    |Top_Student__GC0 |           1|      8691|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\seg_reg[7] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:09:21 ; elapsed = 00:09:39 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |snake_logic__GB0 |           1|      4393|
+|2     |snake_logic__GB1 |           1|       824|
+|3     |snake_logic__GB2 |           1|      1235|
+|4     |snake_logic__GB3 |           1|      1400|
+|5     |snake_logic__GB4 |           1|      2042|
+|6     |snake_logic__GB5 |           1|      2442|
+|7     |snake__GC0       |           1|       136|
+|8     |logic_2048__GB0  |           1|      2899|
+|9     |logic_2048__GB1  |           1|       240|
+|10    |logic_2048__GB2  |           1|       352|
+|11    |logic_2048__GB3  |           1|      2135|
+|12    |logic_2048__GB4  |           1|      1866|
+|13    |logic_2048__GB5  |           1|      1118|
+|14    |logic_2048__GB6  |           1|      1465|
+|15    |game_2048__GC0   |           1|      1753|
+|16    |Top_Student__GC0 |           1|      3516|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:09:25 ; elapsed = 00:09:43 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:26 ; elapsed = 00:09:43 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:28 ; elapsed = 00:09:45 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:28 ; elapsed = 00:09:46 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:29 ; elapsed = 00:09:46 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:29 ; elapsed = 00:09:46 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     5|
+|2     |CARRY4 |  2265|
+|3     |LUT1   |   203|
+|4     |LUT2   |  2876|
+|5     |LUT3   |  2324|
+|6     |LUT4   |  4094|
+|7     |LUT5   |  3311|
+|8     |LUT6   |  9109|
+|9     |MUXF7  |    35|
+|10    |FDRE   |  2144|
+|11    |FDRE_1 |    31|
+|12    |FDSE   |  1537|
+|13    |FDSE_1 |     1|
+|14    |LD     |     1|
+|15    |LDCP   |     2|
+|16    |IBUF   |    15|
+|17    |OBUF   |    37|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+--------------------------+------+
+|      |Instance                  |Module                    |Cells |
++------+--------------------------+--------------------------+------+
+|1     |top                       |                          | 27990|
+|2     |  audio_capture           |Audio_Capture             |   103|
+|3     |  bb                      |bishi_bashi               |  1996|
+|4     |    bbl                   |bishi_bashi_logic         |  1944|
+|5     |      cd                  |countdown                 |   819|
+|6     |      ready_screen        |press_to_continue         |    14|
+|7     |      sl                  |slap                      |   506|
+|8     |      tow                 |tug_of_war                |   130|
+|9     |      wam                 |whack_a_mole              |   416|
+|10    |    bbss                  |bishi_bashi_seven_segment |    33|
+|11    |  centre_signal           |button_press              |     7|
+|12    |    DFF1                  |my_dff_21                 |     6|
+|13    |    DFF2                  |my_dff_22                 |     1|
+|14    |  clk20kHz                |my_clock_divider          |    52|
+|15    |  clk381Hz                |my_clock_divider_0        |    53|
+|16    |  clk50Hz                 |my_clock_divider_1        |    54|
+|17    |  clk6p25mHz              |my_clock_divider_2        |    51|
+|18    |  down_signal             |button_press_3            |     8|
+|19    |    DFF1                  |my_dff_19                 |     7|
+|20    |    DFF2                  |my_dff_20                 |     1|
+|21    |  game_2048_game          |game_2048                 | 11044|
+|22    |    logic                 |logic_2048                | 10593|
+|23    |    nolabel_line86        |score_display             |   328|
+|24    |    peak_value            |peak_algorithm_18         |    78|
+|25    |  led_intensity           |led_controller            |   124|
+|26    |    peak_value            |peak_algorithm_17         |    91|
+|27    |  left_signal             |button_press_4            |    10|
+|28    |    DFF1                  |my_dff_15                 |     8|
+|29    |    DFF2                  |my_dff_16                 |     2|
+|30    |  oled_display            |Oled_Display              |  2056|
+|31    |  oled_volume_intensity   |oled_intensity            |   219|
+|32    |    border                |oled_border               |     9|
+|33    |    colour                |colour_scheme             |    41|
+|34    |    peak_value            |peak_algorithm_14         |   137|
+|35    |    volume                |oled_volume               |     6|
+|36    |  reset_signal            |button_press_5            |     5|
+|37    |    DFF1                  |my_dff_12                 |     3|
+|38    |    DFF2                  |my_dff_13                 |     2|
+|39    |  right_signal            |button_press_6            |    35|
+|40    |    DFF1                  |my_dff_10                 |    33|
+|41    |    DFF2                  |my_dff_11                 |     2|
+|42    |  selection               |menu                      |    20|
+|43    |  seven_segment_intensity |seven_segment_controller  |   137|
+|44    |    peak_value            |peak_algorithm_9          |   118|
+|45    |  snake_game              |snake                     | 11397|
+|46    |    logic                 |snake_logic               | 11289|
+|47    |    peak_value            |peak_algorithm            |    86|
+|48    |  up_signal               |button_press_7            |    11|
+|49    |    DFF1                  |my_dff                    |     9|
+|50    |    DFF2                  |my_dff_8                  |     2|
++------+--------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:29 ; elapsed = 00:09:46 . Memory (MB): peak = 1029.047 ; gain = 772.402
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 127 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:09:05 ; elapsed = 00:09:35 . Memory (MB): peak = 1029.047 ; gain = 388.312
+Synthesis Optimization Complete : Time (s): cpu = 00:09:29 ; elapsed = 00:09:47 . Memory (MB): peak = 1029.047 ; gain = 772.402
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2350 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+  LD => LDCE: 1 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+449 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:09:35 ; elapsed = 00:09:53 . Memory (MB): peak = 1029.047 ; gain = 785.000
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jianning/Desktop/EE2026/Week 11/SoundDisplay.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1029.047 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 29 23:48:07 2021...
